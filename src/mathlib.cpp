@@ -9,6 +9,7 @@
 #include <cassert>
 #include <cmath>
 #include <vector>
+
 using namespace std;
 
 template<typename T> T gcd(T a, T b) {
