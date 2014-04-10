@@ -1,0 +1,7 @@
+# Eclipse stuff
+/Debug
+.project
+.cproject
+
+# Binary for running tests
+src/tests
