@@ -28,8 +28,8 @@ public:
     
     bool isConnected() { 
         visited = vector<bool>(size(), false);
-        dfs(0); 
-        return (std::find(visited.begin(), visited.end(), false) == visited.end()); 
+        dfs(0);
+        return (std::find(visited.begin(), visited.end(), false) == visited.end());
     }
     
 private:
@@ -37,8 +37,8 @@ private:
     vector<bool> visited;
  
     void dfs(int i) { 
-        if(!visited[i]) { 
-            visited[i] = true; 
+        if (!visited[i]) {
+            visited[i] = true;
             std::for_each(vertexes[i].begin(), vertexes[i].end(),
                     bind1st(mem_fun(&Graph::dfs), this)); 
         } 
