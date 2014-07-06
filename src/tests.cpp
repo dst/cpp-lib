@@ -6,13 +6,13 @@
  */
 
 // Let's assume that nobody will see it, including me:
-#include "alglib.cpp"
-#include "bitlib.cpp"
-#include "graphlib.h"
-#include "limitslib.cpp"
-#include "mathlib.cpp"
-#include "sortlib.cpp"
-#include "stringlib.cpp"
+#include "alg.cpp"
+#include "bit.cpp"
+#include "graph.h"
+#include "limits.cpp"
+#include "math.cpp"
+#include "sort.cpp"
+#include "str.cpp"
 
 #include <iostream>
 
@@ -26,7 +26,7 @@ int main() {
     limits();
     math();
     sort();
-    stringlib();
+    strlib();
     
     std::cout << "Tests finished" << std::endl;
     return 0;

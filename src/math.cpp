@@ -48,7 +48,7 @@ inline void math() {
     assert(gcd(13, 7) == 1);
     assert(gcd(21, 6) == 3);
     assert(gcd(7, 21) == 7);
-    
+
     // isPow2
     assert(isPow2(1));
     assert(isPow2(2));
@@ -60,7 +60,7 @@ inline void math() {
     assert(!isPow2(3));
     assert(!isPow2(5));
     assert(!isPow2(6));
-    
+
     // getDigits
     vector<int> digits123 = getDigits(123);
     assert(digits123[0] == 1);
@@ -69,10 +69,10 @@ inline void math() {
     
     vector<int> digits0 = getDigits(0);
     assert(digits0[0] == 0);
-    
+
     // sqrt
     assert(sqrt(9) == 3);
-    
+
     // power
     assert(pow(2, 10) == 1024);
     assert(pow10(3) == 1000);

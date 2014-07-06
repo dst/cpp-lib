@@ -74,8 +74,15 @@ inline int countChar(const string& str, char c) {
     return std::count(str.begin(), str.end(), c);
 }
 
+// c++11
+inline void removeLastChar(string& str) {
+   if (!str.empty()) {
+       str.pop_back();
+   }
+}
+
 // tests
-inline void stringlib() {
+inline void strlib() {
     assert(startsWith("a", "a"));
     assert(startsWith("abcd", "abc"));
     assert(!startsWith("abcd", "abe"));
@@ -106,4 +113,15 @@ inline void stringlib() {
     assert(countChar("abc_", '_') == 1);
     assert(countChar("abc", '_') == 0);
     assert(countChar("", '_') == 0);
+    
+    //removeLastChar
+    string s = "abc";
+    removeLastChar(s);
+    assert(s == "ab");
+    removeLastChar(s);
+    assert(s == "a");
+    removeLastChar(s);
+    assert(s == "");
+    removeLastChar(s);
+    assert(s == "");
 }

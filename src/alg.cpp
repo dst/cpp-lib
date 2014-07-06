@@ -9,6 +9,7 @@
 
 #include <algorithm>
 #include <cassert>
+#include <numeric>
 #include <set>
 #include <string>
 #include <vector>
@@ -61,6 +62,8 @@ inline vector<int> removeDuplicates(const vector<int>& v) {
     vector<int> sorted(s.begin(), s.end());
     return sorted;
 }
+
+// TODO: remove one/all elts from vector
 
 // tests
 inline void alg() {

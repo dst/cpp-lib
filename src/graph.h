@@ -9,10 +9,13 @@
 #define GRAPHLIB_H_
 
 #include <algorithm>
+#include <cassert>
 #include <functional>
 #include <vector>
 
-typedef std::vector<std::vector<int> > Vertexes;
+using std::vector;
+
+typedef vector<vector<int> > Vertexes;
 
 class Graph {
 public:
@@ -24,7 +27,7 @@ public:
     }
     
     bool isConnected() { 
-        visited = std::vector<bool>(size(), false);
+        visited = vector<bool>(size(), false);
         dfs(0); 
         return (std::find(visited.begin(), visited.end(), false) == visited.end()); 
     }
