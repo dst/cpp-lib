@@ -31,7 +31,7 @@ using namespace std;
 // add some elements to set
 // vector<int> v; 
 // set<int> s; 
-// copy(all(v), inserter(s, s.begin()));
+// copy(v.begin(), v.end(), inserter(s, s.begin()));
 
 // search first not equal adjacent elements, return iter to first of them
 // 1 1 1 1 2 2 2 3
