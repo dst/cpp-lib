@@ -8,6 +8,7 @@
 // Let's assume that nobody will see it, including me:
 #include "alg.cpp"
 #include "bit.cpp"
+#include "col.cpp"
 #include "graph.h"
 #include "limits.cpp"
 #include "math.cpp"
@@ -22,6 +23,7 @@ int main() {
     
     alg();
     bit();
+    col();
     graph();
     limits();
     math();
