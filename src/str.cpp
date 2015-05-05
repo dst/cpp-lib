@@ -81,6 +81,10 @@ inline void removeLastChar(string& str) {
    }
 }
 
+inline void reverse(string& str) {
+    reverse(str.begin(), str.end());
+}
+
 // tests
 inline void strlib() {
     assert(startsWith("a", "a"));
@@ -124,4 +128,9 @@ inline void strlib() {
     assert(s == "");
     removeLastChar(s);
     assert(s == "");
+
+    // reverse
+    s = "abc";
+    reverse(s);
+    assert(s == "cba");
 }

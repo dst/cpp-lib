@@ -19,7 +19,7 @@ using namespace std;
 
 /* next_permutation
  * Don’t forget to ensure that the elements in a container are sorted before
- * your first call to  next_permutation(...). Their initial state should form
+ * your first call to next_permutation(...). Their initial state should form
  * the very first permutation; otherwise, some permutations will not be checked
  * 
  * Example:
@@ -44,16 +44,12 @@ inline void replaceElts(vector<int>& v, int oldVale, int newValue) {
     replace(v.begin(), v.end(), oldVale, newValue);
 }
 
-inline void reverse(string& str) {
-    reverse(str.begin(), str.end());
-}
-
 inline long long sum(const vector<int>& v) { 
-    return accumulate(v.begin(), v.end(), (long long)0);
+    return accumulate(v.begin(), v.end(), 0LL);
 }
 
 inline long long product(const vector<int>& v) {
-    return accumulate(v.begin(), v.end(), (long long)1, multiplies<int>()); 
+    return accumulate(v.begin(), v.end(), 1LL, multiplies<int>()); 
 }
 
 // Get rid of duplicates in vector and sort it
@@ -67,9 +63,21 @@ inline vector<int> removeDuplicates(const vector<int>& v) {
 
 // tests
 inline void alg() {
+    // replaceElts
+    auto v = VECTOR(1, 2, 3);
+    replaceElts(v, 1, 2);
+    assert(count(v.begin(), v.end(), 1) == 0);
+    assert(count(v.begin(), v.end(), 2) == 2);
+    assert(count(v.begin(), v.end(), 3) == 1);
+
     //sum
     assert(sum(VECTOR(1, 2, 3, 4)) == 10);
     
     //product
     assert(product(VECTOR(1, 2, 3, 4)) == 24);
+
+    // removeDuplicates
+    auto duplicated = VECTOR(1, 1);
+    auto uniq = removeDuplicates(duplicated);
+    assert(count(uniq.begin(), uniq.end(), 1) == 1);
 }

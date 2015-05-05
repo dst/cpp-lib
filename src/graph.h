@@ -19,7 +19,6 @@ typedef vector<vector<int> > Vertexes;
 
 class Graph {
 public:
-    
     Graph(const Vertexes vertexes): vertexes(vertexes) {}
     
     inline int size() {
