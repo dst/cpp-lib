@@ -28,7 +28,7 @@ int main() {
     limits();
     math();
     sort();
-    strlib();
+    str();
     
     std::cout << "Tests finished" << std::endl;
     return 0;

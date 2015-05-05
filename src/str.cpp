@@ -86,7 +86,7 @@ inline void reverse(string& str) {
 }
 
 // tests
-inline void strlib() {
+inline void str() {
     assert(startsWith("a", "a"));
     assert(startsWith("abcd", "abc"));
     assert(!startsWith("abcd", "abe"));
