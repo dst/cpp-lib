@@ -1,4 +1,4 @@
 cpp-lib
 =======
 
-Useful C++ contructions, usually needed in programming competions such as TopCoder.
+Useful C++ contructions, especially in programming competitions such as TopCoder.
